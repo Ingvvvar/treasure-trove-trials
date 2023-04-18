@@ -10,5 +10,9 @@ const app = new Application({
   height: window.innerHeight
 });
 
-
-console.log(app);
+app.loader
+  .add('assets', 'assets.json')
+  .add('drags', 'drags.json')
+  .load(() => {
+    console.log('All resources loaded');
+  });
