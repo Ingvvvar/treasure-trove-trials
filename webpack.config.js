@@ -11,7 +11,7 @@ module.exports = (env, argv) => {
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: 'bundle.js',
-      publicPath: '/treasure-trove-trials/'
+      publicPath: '/'
     },
     devServer: {
       compress: true,
